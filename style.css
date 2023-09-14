@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    height: 100vh;
+    width: 100%;
+}
+.header {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: brown;
+}
+
+.side-bar {
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 1 / -1;
+    background-color: aqua;
+    grid-template-rows: 50px 400px;
+    justify-content: center;
+}
+
+.top-sidebar {
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+}
+
+.bottom-sidebar {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.announcements-titles {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(3, 300px);
+    grid-row: 1 / -1;
+    grid-column: 1 / 3;
+}
+
+.card {
+    height: 200px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-left: 5px solid rgb(165, 103, 21);
+    margin: 10px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.all-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust column layout as needed */
+    grid-template-rows: 1fr 1fr; /* Adjust row layout as needed */
+    background-color: rgb(196, 196, 87);
+}
+
+.announcements {
+    grid-column: 4 / 4;
+    grid-row: 1 / 1; 
+    background-color: #fff;
+    padding: 10px;
+    width: 300px;
+}
+
+.announcements-things {
+    width: 300px;
+    font-size: 16px;
+}
+
+.trending {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    background-color: #fff;
+    height: 300px;
+}
+
+.announcements,
+.trending {
+    padding: 15px;
+    margin: 25px 12px;
+    border-radius: 10px;
+}
+
+.other-people-profile {
+    display: flex;
+    align-items: center; /* Vertically center items within each profile */
+    margin-right: 20px; /* Add some spacing between profiles */
+}
+
+.other-people-profile img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; /* Add spacing between the image and text */
+    border-radius: 25px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stack text on top of each other */
+    text-align: left;
+}
+
+.text-container p {
+    margin: 5px 0; /* Add spacing between stacked text elements */
+}
