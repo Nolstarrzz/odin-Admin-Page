@@ -11,14 +11,46 @@ body {
     display: grid;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-color: brown;
+    background-color: whitesmoke;
+    grid-template-rows: 1fr 1fr;
+}
+
+.profile-picture img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.profile-person{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.top-header {
+    display: grid;
+    grid-row: 1 / 1;
+    grid-template-columns: 1fr 10fr 1fr 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    background-color: rgb(160, 160, 160);
+    border-radius: 25px;
+    height: 25px;
+}
+
+.search-icon,
+.notification-icon {
+    display: flex;
+    justify-content: center;
 }
 
 .side-bar {
     display: grid;
     grid-column: 1 / 1;
     grid-row: 1 / -1;
-    background-color: aqua;
+    background-color: rgb(14, 41, 197);
     grid-template-rows: 50px 400px;
     justify-content: center;
 }
@@ -56,7 +88,7 @@ body {
     padding: 15px;
     background-color: rgb(255, 255, 255);
     border-left: 5px solid rgb(165, 103, 21);
-    margin: 10px;
+    margin: 30px;
     border-radius: 5px;
     width: 400px;
 }
@@ -64,8 +96,8 @@ body {
 .all-content {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Adjust column layout as needed */
-    grid-template-rows: 1fr 1fr; /* Adjust row layout as needed */
-    background-color: rgb(196, 196, 87);
+    grid-template-rows: 1fr auto; /* Adjust row layout as needed */
+    background-color: rgb(177, 177, 177);
 }
 
 .announcements {
@@ -85,13 +117,12 @@ body {
     grid-column: 4 / 4;
     grid-row: 2 / 2;
     background-color: #fff;
-    height: 300px;
 }
 
 .announcements,
 .trending {
     padding: 15px;
-    margin: 25px 12px;
+    margin: 25px 25px;
     border-radius: 10px;
 }
 
