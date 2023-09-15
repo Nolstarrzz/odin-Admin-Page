@@ -34,6 +34,68 @@ body {
     align-items: center;
 }
 
+.bigger-profile img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.bigger-profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.person-greeting>p.person-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.person-greeting>p.person-title{
+    font-size: 14px;
+}
+
+.header-buttons button{
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: rgb(66, 66, 196);
+    border: 0px;
+}
+
+.side-bar-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.side-bar-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-header {
+    display: grid;
+    grid-row: 2 / 2;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 25px;
+}
+
 .search-bar {
     background-color: rgb(160, 160, 160);
     border-radius: 25px;
@@ -50,9 +112,11 @@ body {
     display: grid;
     grid-column: 1 / 1;
     grid-row: 1 / -1;
-    background-color: rgb(14, 41, 197);
-    grid-template-rows: 50px 400px;
+    background-color: rgb(32, 37, 66);
+    grid-template-rows: 50px 350px;
     justify-content: center;
+    grid-template-columns: 1fr;
+    padding: 15px;
 }
 
 .top-sidebar {
